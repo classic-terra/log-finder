@@ -1,6 +1,6 @@
 {
-  "name": "@terra-money/log-finder",
-  "version": "1.1.6",
+  "name": "@terra-rebels/log-finder",
+  "version": "0.0.4",
   "description": "Generic pattern matcher for Terra transaction logs",
   "main": "dist/index.js",
   "publishConfig": {

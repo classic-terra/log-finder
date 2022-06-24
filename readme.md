@@ -1,11 +1,11 @@
-# @terra-money/log-finder
+# @terra-rebels/log-finder
 
 Generic pattern matcher for Terra transaction logs
 
 ## Installation
 
 ```
-npm i @terra-money/log-finder
+npm i @terra-rebels/log-finder
 ```
 
 ## Usage
