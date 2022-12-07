@@ -1,6 +1,6 @@
 {
   "name": "@terra-rebels/log-finder",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Generic pattern matcher for Terra transaction logs",
   "main": "dist/index.js",
   "publishConfig": {
@@ -16,7 +16,7 @@
     "preversion": "npm run build",
     "prepare": "husky install"
   },
-  "author": "Terraform Labs, PTE.",
+  "author": "Terra Rebels",
   "license": "MIT",
   "lint-staged": {
     "**/src/{**/*,*}.{ts,tsx}": [
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@ssen/eslint-config": "^2.0.1",
     "@ssen/prettier-config": "^2.0.1",
-    "@types/jest": "^26.0.23",
-    "@types/node": "^15.12.2",
+    "@types/jest": "^27.0.0",
+    "@types/node": "^16.6.2",
     "auto-changelog": "^2.3.0",
     "eslint": "^7.28.0",
     "husky": "^6.0.0",
