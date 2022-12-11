@@ -18,7 +18,7 @@ var valuePredicate = function (target, value) {
         case 'function':
             return target(value);
         default:
-            throw new Error("Received unknown log finder value predicate, type " + target);
+            throw new Error("Received unknown log finder value predicate, type ".concat(target));
     }
 };
 exports.valuePredicate = valuePredicate;

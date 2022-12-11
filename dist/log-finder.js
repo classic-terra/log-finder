@@ -9,7 +9,7 @@ var occurenceRule = function (src, target) {
         target[0] === src.key,
         // value match IF value is given, otherwise true
         typeof target[1] !== 'undefined'
-            ? lib_1.valuePredicate(target[1], src.value)
+            ? (0, lib_1.valuePredicate)(target[1], src.value)
             : true,
     ].every(function (predicate) { return predicate; });
 };
@@ -43,7 +43,7 @@ var createLogFinder = function (logFindRule, callback) {
             });
             // call callback if match is found
             if (match) {
-                var matchingChunk = lib_1.findMatchingChunkSlice(logFindRule.matchUntil, haystack, logFindRuleLength);
+                var matchingChunk = (0, lib_1.findMatchingChunkSlice)(logFindRule.matchUntil, haystack, logFindRuleLength);
                 // create exact matching attributes, send it through callback
                 callback(fragment, matchingChunk);
                 doFind(nextHaystack(haystack, logFindRuleLength));
@@ -60,7 +60,7 @@ exports.createLogFinder = createLogFinder;
 var createReturningLogFinder = function (logFindRule, transform) {
     return function (event) {
         return resultIoC(function (onLogFound) {
-            return exports.createLogFinder(logFindRule, function (log, match) {
+            return (0, exports.createLogFinder)(logFindRule, function (log, match) {
                 return onLogFound({
                     match: match,
                     fragment: log,
