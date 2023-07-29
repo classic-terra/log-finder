@@ -1,6 +1,6 @@
 {
-  "name": "@terra-rebels/log-finder",
-  "version": "1.0.0",
+  "name": "@terraclassic-community/log-finder",
+  "version": "1.1.6",
   "description": "Generic pattern matcher for Terra transaction logs",
   "main": "dist/index.js",
   "publishConfig": {
@@ -16,7 +16,7 @@
     "preversion": "npm run build",
     "prepare": "husky install"
   },
-  "author": "Terra Rebels",
+  "author": "Terra Classic Community",
   "license": "MIT",
   "lint-staged": {
     "**/src/{**/*,*}.{ts,tsx}": [
